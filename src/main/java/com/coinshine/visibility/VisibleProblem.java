@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class VisibleProblem {
 	private static ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("thread-call-runner-%d").build();
-	private static ExecutorService executorService = new ThreadPoolExecutor(3, 3, 100L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(), threadFactory);
+	private static ExecutorService executorService = new ThreadPoolExecutor(2, 2, 0, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(), threadFactory);
 	private static long count = 0;
 
 	private void add10k() {
