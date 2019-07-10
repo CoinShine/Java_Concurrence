@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * DESCRIPTION:线程上下文切换
  * 参考方腾飞老师的《Java并发编程的艺术》第一章
- * 结论两个线程并行：当循环次数在1亿级别，并行才比较占优势
+ * 结论：两个线程并行的情况，当循环次数在1亿级别，并行才比较占优势
  * （和cup性能有关，测试机器i7-6700HQ）
  *
  * @author Coins
